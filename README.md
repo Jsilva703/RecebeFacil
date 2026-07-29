@@ -12,13 +12,13 @@ Fundacao tecnica de uma API Rails para um SaaS de controle de servicos e cobranc
 
 ## Configuracao
 
-Copie o arquivo de exemplo de variaveis de ambiente:
+Copie o arquivo de exemplo de variaveis de ambiente e preencha os valores locais:
 
 ```sh
 cp .env.example .env
 ```
 
-As principais variaveis sao:
+O arquivo `.env.example` contem placeholders, nao credenciais reais. As principais variaveis sao:
 
 - `DATABASE_HOST`
 - `DATABASE_PORT`
@@ -29,6 +29,8 @@ As principais variaveis sao:
 - `RAILS_MAX_THREADS`
 
 ## Executando com Docker
+
+O Docker Compose exige um arquivo .env local com usuario e senha do PostgreSQL preenchidos.
 
 ```sh
 docker compose build
